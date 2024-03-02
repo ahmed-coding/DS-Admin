@@ -30,8 +30,7 @@ class BusinessSettingsController extends Controller
         private BusinessSetting $business_setting,
         private Currency        $currency,
         private SocialMedia     $social_media
-    )
-    {
+    ) {
     }
 
     /**
@@ -285,7 +284,8 @@ class BusinessSettingsController extends Controller
         }
 
         $data_values = Setting::whereIn('settings_type', ['payment_config'])
-            ->whereIn('key_name', ['ssl_commerz', 'paypal', 'stripe', 'razor_pay', 'senang_pay', 'paystack', 'paymob_accept', 'flutterwave', 'bkash', 'mercadopago'])
+            // ->whereIn('key_name', ['ssl_commerz', 'paypal', 'stripe', 'razor_pay', 'senang_pay', 'paystack', 'paymob_accept', 'flutterwave', 'bkash', 'mercadopago'])
+            ->whereIn('key_name', ['ssl_commerz', 'paypal',])
             ->get();
 
         return view('admin-views.business-settings.payment-index', compact('published_status', 'payment_url', 'data_values'));
@@ -413,7 +413,6 @@ class BusinessSettingsController extends Controller
 
         Toastr::success(GATEWAYS_DEFAULT_UPDATE_200['message']);
         return back();
-
     }
 
     /**
@@ -1135,10 +1134,8 @@ class BusinessSettingsController extends Controller
 
             fwrite($old_file, $new_text);
             fclose($old_file);
-
         } catch (\Exception $exception) {
         }
-
     }
 
     /**
@@ -1178,13 +1175,11 @@ class BusinessSettingsController extends Controller
             return response()->json([
                 'success' => 1,
             ]);
-
         } catch (\Exception $exception) {
             return response()->json([
                 'error' => 1,
             ]);
         }
-
     }
 
     /**
@@ -1324,14 +1319,16 @@ class BusinessSettingsController extends Controller
             $request['shipping_per_km'] = Helpers::get_business_settings('delivery_management')['shipping_per_km'];
         }
         if ($request['shipping_status'] == 1) {
-            $request->validate([
-                'min_shipping_charge' => 'required',
-                'shipping_per_km' => 'required',
-            ],
+            $request->validate(
+                [
+                    'min_shipping_charge' => 'required',
+                    'shipping_per_km' => 'required',
+                ],
                 [
                     'min_shipping_charge.required' => 'Minimum shipping charge is required while shipping method is active',
                     'shipping_per_km.required' => 'Shipping charge per Kilometer is required while shipping method is active',
-                ]);
+                ]
+            );
         }
 
 
@@ -1447,5 +1444,4 @@ class BusinessSettingsController extends Controller
         Toastr::success(translate('Settings updated!'));
         return back();
     }
-
 }
