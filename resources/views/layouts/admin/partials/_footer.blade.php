@@ -9,29 +9,24 @@
             <div class="d-flex justify-content-center justify-content-lg-end">
                 <ul class="list-inline-menu justify-content-center">
                     <li>
-                        <a href="{{route('admin.business-settings.ecom-setup')}}">
-                            <span>{{translate('Business')}} {{translate('setup')}}</span>
+                        <a href="{{ route('admin.business-settings.ecom-setup') }}">
+                            <span>{{ translate('Business') }} {{ translate('setup') }}</span>
                             <i class="tio-settings"></i>
                         </a>
                     </li>
 
                     <li>
-                        <a href="{{route('admin.settings')}}">
-                            <span>{{translate('profile')}}</span>
+                        <a href="{{ route('admin.settings') }}">
+                            <span>{{ translate('profile') }}</span>
                             <i class="tio-user"></i>
                         </a>
                     </li>
 
                     <li>
-                        <a href="{{route('admin.dashboard')}}">
-                            <span>{{translate('Home')}}</span>
+                        <a href="{{ route('admin.dashboard') }}">
+                            <span>{{ translate('Home') }}</span>
                             <i class="tio-home-outlined"></i>
                         </a>
-                    </li>
-                    <li>
-                        <label class="badge badge-soft-success">
-                            {{ translate('Software Version') }} : {{ env('SOFTWARE_VERSION') }}
-                        </label>
                     </li>
                 </ul>
             </div>
