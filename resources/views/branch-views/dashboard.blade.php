@@ -83,8 +83,8 @@
                         "datasets": [
                         {
                             "data": [{{$earning[1]}},{{$earning[2]}},{{$earning[3]}},{{$earning[4]}},{{$earning[5]}},{{$earning[6]}},{{$earning[7]}},{{$earning[8]}},{{$earning[9]}},{{$earning[10]}},{{$earning[11]}},{{$earning[12]}}],
-                            "backgroundColor": "#673ab7",
-                            "borderColor": "#673ab7"
+                            "backgroundColor": "#794336",
+                            "borderColor": "#794336"
                         }
                         ]
                     },
@@ -278,8 +278,8 @@
                                 {
                                     label: "{{translate('Earning')}}",
                                     data: [],
-                                    backgroundColor: "#673ab7",
-                                    borderColor: "#673ab7"
+                                    backgroundColor: "#794336",
+                                    borderColor: "#794336"
                                 }
                             ]
                         },
