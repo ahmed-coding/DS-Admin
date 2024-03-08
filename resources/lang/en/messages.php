@@ -1410,4 +1410,6 @@
   'weekly_report' => 'Weekly report',
   '(For ex: demo.abc.com)' => '(For ex: demo.abc.com)',
   'Save' => 'Save',
+  ' send a message' => ' send a message',
+  'Successfully sent' => 'Successfully sent',
 );
