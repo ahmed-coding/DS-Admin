@@ -1412,4 +1412,5 @@
   'Save' => 'Save',
   ' send a message' => ' send a message',
   'Successfully sent' => 'Successfully sent',
+  'About us updated!' => 'About us updated!',
 );
