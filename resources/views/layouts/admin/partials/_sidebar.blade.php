@@ -386,16 +386,17 @@
                                 </span>
                             </a>
                         </li>
-                        {{--
-                        <li class="navbar-vertical-aside-has-menu {{Request::is('admin/report/driver-report')?'active':''}}">
+
+                        <li
+                            class="navbar-vertical-aside-has-menu {{ Request::is('admin/report/driver-report') ? 'active' : '' }}">
                             <a class="js-navbar-vertical-aside-menu-link nav-link"
-                               href="{{route('admin.report.driver-report')}}">
+                                href="{{ route('admin.report.driver-report') }}">
                                 <i class="tio-chart-pie-2 nav-icon"></i>
                                 <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
-                                    {{translate('deliveryman_report')}}
+                                    {{ translate('deliveryman_report') }}
                                 </span>
                             </a>
-                        </li> --}}
+                        </li>
 
                         <li
                             class="navbar-vertical-aside-has-menu {{ Request::is('admin/report/product-report') ? 'active' : '' }}">
@@ -435,7 +436,7 @@
                                 </span>
                             </a>
                         </li>
-                        {{-- <li
+                        <li
                             class="navbar-vertical-aside-has-menu {{ Request::is('admin/customer/subscribed-email*') ? 'active' : '' }}">
                             <a class="js-navbar-vertical-aside-menu-link nav-link"
                                 href="{{ route('admin.customer.subscribed_emails') }}">
@@ -444,7 +445,7 @@
                                     {{ translate('Subscribed Emails') }}
                                 </span>
                             </a>
-                        </li> --}}
+                        </li>
 
                         <li
                             class="navbar-vertical-aside-has-menu {{ Request::is('admin/reviews*') ? 'active' : '' }}">
