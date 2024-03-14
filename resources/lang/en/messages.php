@@ -1413,4 +1413,7 @@
   ' send a message' => ' send a message',
   'Successfully sent' => 'Successfully sent',
   'About us updated!' => 'About us updated!',
+  'Order placed successfully' => 'Order placed successfully',
+  'successfully review submitted' => 'Successfully review submitted',
+  'One of your order is returned' => 'One of your order is returned',
 );
