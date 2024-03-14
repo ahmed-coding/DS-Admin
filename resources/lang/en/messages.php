@@ -1416,4 +1416,5 @@
   'Order placed successfully' => 'Order placed successfully',
   'successfully review submitted' => 'Successfully review submitted',
   'One of your order is returned' => 'One of your order is returned',
+  'Coupon updated successfully!' => 'Coupon updated successfully!',
 );
