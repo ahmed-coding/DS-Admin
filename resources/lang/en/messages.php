@@ -1417,4 +1417,7 @@
   'successfully review submitted' => 'Successfully review submitted',
   'One of your order is returned' => 'One of your order is returned',
   'Coupon updated successfully!' => 'Coupon updated successfully!',
+  'bulk-import' => 'Bulk-import',
+  'ID' => 'ID',
+  'One of your order is out_for_delivery' => 'One of your order is out for delivery',
 );
