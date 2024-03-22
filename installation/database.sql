@@ -173,7 +173,7 @@ CREATE TABLE `branches` (
 --
 
 INSERT INTO `branches` (`id`, `restaurant_id`, `name`, `email`, `password`, `latitude`, `longitude`, `address`, `status`, `created_at`, `updated_at`, `coverage`, `remember_token`, `image`, `phone`) VALUES
-(1, NULL, 'Dinajpur', 'newb@gmail.com', '$2y$10$ty7WZIxF2GQ0ajs5xsEnrOzOlDc9UqL4X6NIDRx5ofm3NLcUm1j0S', '22.848823', '91.390306', 'Hazi osman gani lane', 1, '2021-02-24 09:45:49', '2021-03-06 04:31:01', 500, NULL, NULL, NULL);
+(1, NULL, 'Main branch', 'newb@gmail.com', '$2y$10$ty7WZIxF2GQ0ajs5xsEnrOzOlDc9UqL4X6NIDRx5ofm3NLcUm1j0S', '22.848823', '91.390306', 'Hazi osman gani lane', 1, '2021-02-24 09:45:49', '2021-03-06 04:31:01', 500, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -203,10 +203,10 @@ INSERT INTO `business_settings` (`id`, `key`, `value`, `created_at`, `updated_at
 (8, 'ssl_commerz_payment', '{\"status\":\"0\",\"store_id\":null,\"store_password\":null}', NULL, '2021-06-12 04:59:06'),
 (9, 'paypal', '{\"status\":\"0\",\"paypal_client_id\":null,\"paypal_secret\":null}', NULL, '2021-06-12 04:59:20'),
 (10, 'stripe', '{\"status\":\"1\",\"api_key\":null,\"published_key\":null}', NULL, '2021-06-12 04:59:25'),
-(11, 'phone', '+01747413273', NULL, NULL),
-(13, 'footer_text', 'copyright', NULL, NULL),
-(14, 'address', 'Hazi osman gani lane', NULL, NULL),
-(15, 'email_address', 'nipon34.bd@gmail.com', NULL, NULL),
+(11, 'phone', '+967770948670', NULL, NULL),
+(13, 'footer_text', 'DigitStitch Dashbord', NULL, NULL),
+(14, 'address', 'Yemen Sanaa', NULL, NULL),
+(15, 'email_address', 'ahmed/128hemzh@gmail.com', NULL, NULL),
 (16, 'cash_on_delivery', '{\"status\":\"1\"}', NULL, '2021-02-11 18:39:36'),
 (17, 'email_verification', '0', NULL, NULL),
 (18, 'digital_payment', '{\"status\":\"1\"}', '2021-01-30 19:38:54', '2021-01-30 19:38:58'),
