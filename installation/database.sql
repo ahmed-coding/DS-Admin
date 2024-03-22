@@ -195,7 +195,7 @@ CREATE TABLE `business_settings` (
 
 INSERT INTO `business_settings` (`id`, `key`, `value`, `created_at`, `updated_at`) VALUES
 (1, 'self_pickup', '1', '2021-01-06 05:55:51', '2021-01-06 05:55:51'),
-(3, 'restaurant_name', 'Business Name', NULL, NULL),
+(3, 'restaurant_name', 'DigitStitch', NULL, NULL),
 (4, 'currency', 'USD', NULL, NULL),
 (5, 'logo', '2021-06-12-60c493426bd7a.png', NULL, NULL),
 (6, 'mail_config', '{\"status\":0,\"name\":\"Delivery APP\",\"host\":\"mail.demo.com\",\"driver\":\"smtp\",\"port\":\"587\",\"username\":\"info@demo.com\",\"email_id\":\"info@demo.com\",\"encryption\":\"tls\",\"password\":\"demo\"}', NULL, '2024-01-03 17:09:14'),
