@@ -1420,4 +1420,5 @@
   'bulk-import' => 'Bulk-import',
   'ID' => 'ID',
   'One of your order is out_for_delivery' => 'One of your order is out for delivery',
+  'Item removed from wishlist list! ' => 'Item removed from wishlist list! ',
 );
